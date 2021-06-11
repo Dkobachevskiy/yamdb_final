@@ -1,5 +1,5 @@
 # infra_sp2
-Проект спринта №18: infra_sp2
+Проект спринта №19: YAMDB_FINAL
 
 Команды для запуска приложения:
     source/venv/bin/activate

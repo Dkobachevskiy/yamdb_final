@@ -10,4 +10,4 @@
     python manage.py createsuperuser
 
 
-https://github.com/Dkobachevskiy/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg
+https://github.com/Dkobachevskiy/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg

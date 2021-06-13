@@ -8,5 +8,6 @@
 
 Команду для создания суперпользователя:
     python manage.py createsuperuser
+    
 
 https://github.com/Dkobachevskiy/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg

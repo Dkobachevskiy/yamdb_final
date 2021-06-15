@@ -60,12 +60,12 @@ jobs:
         username: ${{ secrets.USER }}
         key: ${{ secrets.SSH_KEY }}
         passphrase: ${{ secrets.PASSPHRASE }}
-        #stack_file_name: docker-compose.yaml
+        stack_file_name: docker-compose.yaml
         script: |
           sudo docker pull ${{ secrets.DOCKER_USERNAME }}/${{ secrets.DOCKER_PROJECT }}:latest
+          cd ~
           sudo docker-compose stop
           sudo docker-compose rm web
-          cd ${{ secrets.DOCKER_PROJECT }}
           touch .env
           echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
           echo DB_NAME=${{ secrets.DB_NAME }} >> .env

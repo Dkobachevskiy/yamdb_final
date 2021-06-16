@@ -1,13 +1,7 @@
 import datetime
 import os
-import sys
-from django.conf import BASE_DIR
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-settings.configure()
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "myproject.settings")
-sys.path.append(BASE_DIR)
 
 SECRET_KEY = 'p&l%385148kslhtyn^##a1)ilz@4zqj=rq&agdol^##zgl9(vs'
 

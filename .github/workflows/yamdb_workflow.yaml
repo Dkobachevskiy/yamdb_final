@@ -29,10 +29,6 @@ jobs:
         cd ./
         pytest
 
-  on:
-    push:
-      branches: [ main/master ]
-
   build_and_push_to_docker_hub:
       name: Push Docker image to Docker Hub
       runs-on: ubuntu-latest
@@ -70,7 +66,6 @@ jobs:
           sudo docker-compose stop
           sudo docker-compose rm web
           touch .env
-          echo os.environ['DJANGO_SETTINGS_MODULE'] = 'config.settings' >> .env
           echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
           echo DB_NAME=${{ secrets.DB_NAME }} >> .env
           echo POSTGRES_USER=${{ secrets.POSTGRES_USER }} >> .env
@@ -90,3 +85,10 @@ jobs:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
         message: ${{ github.workflow }} Успешно выполнен!
+
+
+#Суть замечания понятна, но как это разделить в документации не нашел,
+#ибо на два on не реагирует, пишет что так нельзя, в nedds, 
+#тоже не нашел как такое условие вставить, 
+#едиснвтенное что приходит в голову это два файла *.yaml
+#но не уверен в верности этого решения

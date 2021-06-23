@@ -9,6 +9,8 @@ COPY requirements.txt .
 
 RUN pip install --upgrade pip
 
+RUN sudo apt-get install postgresql-server-dev-9.4
+
 RUN pip install -r requirements.txt
 
 COPY . .

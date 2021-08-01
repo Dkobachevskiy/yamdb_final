@@ -7,7 +7,6 @@ services:
     env_file:
     - ./.env
   web:
-    build: .
     image: dkobachevskiy/final19:latest
     restart: always
     volumes:

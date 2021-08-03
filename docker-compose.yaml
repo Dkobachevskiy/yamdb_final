@@ -4,10 +4,6 @@ services:
     image: postgres:12.4
     volumes:
       - postgres_data:/var/lib/postgresql/data/
-    environment:
-      - POSTGRES_PASSWORD=pass
-    ports:
-      - "54320:5432"
     env_file:
       - ./.env
     restart:

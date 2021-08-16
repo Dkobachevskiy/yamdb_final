@@ -45,7 +45,7 @@ python manage.py createsuperuser.
 Python, Django, Django REST Framework, PostgreSQL, Nginx, Docker, GitHub Actions
 
 Авторы
-Vladimir Dvorianov - автор, студент курса Python-разработчик в Яндекс.Практикум. Это учебный проект. Если есть вопросы или пожелания по проекту пишите в telegram @Dvoryanoff
+Denis Kobachevskiy - автор, студент курса Python-разработчик в Яндекс.Практикум. Это учебный проект. Если есть вопросы или пожелания по проекту пишите в telegram @Dvoryanoff
 Список разработчиков принимавших участие в проекте.
 
 Благодарности
@@ -55,7 +55,7 @@ Vladimir Dvorianov - автор, студент курса Python-разрабо
 Код ревьюверу
 Отзывчивым однокурсникам
 Бэйдж
-https://github.com/dvoryanoff/yamdb_final/workflows/yamdb_workflow.yaml/badge.svg
+https://github.com/Dkobachevskiy/yamdb_final/workflows/yamdb_workflow.yaml/badge.svg
 
 Развернутый проект можно посмотреть по ссылке:
 
